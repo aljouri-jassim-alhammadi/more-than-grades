@@ -21,7 +21,7 @@
   <circle cx="650" cy="120" r="180" fill="#10b981" opacity="0.12" filter="url(#glowEffect)" />
   <circle cx="150" cy="380" r="150" fill="#38bdf8" opacity="0.1" filter="url(#glowEffect)" />
 
-  <!-- Geometric Grid & Circuit Lines (AI Aesthetic) -->
+  <!-- Geometric Grid &amp; Circuit Lines (AI Aesthetic) -->
   <g stroke="rgba(255,255,255,0.06)" stroke-width="1.2">
     <line x1="0" y1="80" x2="800" y2="80" />
     <line x1="0" y1="180" x2="800" y2="180" />
@@ -44,7 +44,7 @@
 
     <!-- Main Title (English) -->
     <text x="260" y="205" font-family="'Inter', 'Segoe UI', sans-serif" font-size="21" font-weight="800" fill="#F8FAFC" text-anchor="middle">
-      A Safe & Confidential Space to Be Heard
+      A Safe &amp; Confidential Space to Be Heard
     </text>
 
     <!-- Subtitle (English) -->

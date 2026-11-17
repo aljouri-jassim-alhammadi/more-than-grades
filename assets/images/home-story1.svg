@@ -21,7 +21,7 @@
   <circle cx="650" cy="120" r="180" fill="#38bdf8" opacity="0.12" filter="url(#glowEffect)" />
   <circle cx="150" cy="380" r="150" fill="#6366f1" opacity="0.1" filter="url(#glowEffect)" />
 
-  <!-- Geometric Grid & Circuit Lines (AI Aesthetic) -->
+  <!-- Geometric Grid &amp; Circuit Lines (AI Aesthetic) -->
   <g stroke="rgba(255,255,255,0.06)" stroke-width="1.2">
     <line x1="0" y1="80" x2="800" y2="80" />
     <line x1="0" y1="180" x2="800" y2="180" />
@@ -49,7 +49,7 @@
 
     <!-- Subtitle (English) -->
     <text x="260" y="235" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#38bdf8" letter-spacing="1.5" text-anchor="middle">
-      SUPPORT & EMPATHY
+      SUPPORT &amp; EMPATHY
     </text>
 
     <!-- Narrative Description Snippet (English) -->
