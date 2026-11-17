@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="gradCoral" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+    <linearGradient id="gradSun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Logo Icon: Open Book morphing into Soaring Wings & Blooming Figure -->
+  <g transform="translate(15, 10)">
+    <!-- Base Book Spine -->
+    <path d="M 50 82 C 40 85 20 85 10 92 C 10 75 10 50 10 35 C 22 28 38 29 50 36 C 62 29 78 28 90 35 C 90 50 90 75 90 92 C 80 85 60 85 50 82 Z" fill="#1E293B" stroke="url(#gradTeal)" stroke-width="2.5" opacity="0.9" />
+    
+    <!-- Left Wing / Page -->
+    <path d="M 50 80 C 40 76 25 76 14 84 C 14 62 18 42 30 24 C 38 32 46 45 50 60 Z" fill="url(#gradTeal)" opacity="0.9" filter="url(#glow)" />
+    
+    <!-- Right Wing / Soaring Phoenix Feather -->
+    <path d="M 50 80 C 60 76 75 76 86 84 C 86 62 82 42 70 24 C 62 32 54 45 50 60 Z" fill="url(#gradCoral)" opacity="0.9" filter="url(#glow)" />
+    
+    <!-- Center Upward Soaring Figure (Human Spirit / Star) -->
+    <circle cx="50" cy="18" r="8" fill="url(#gradSun)" filter="url(#glow)" />
+    <path d="M 50 28 C 45 35 44 48 50 56 C 56 48 55 35 50 28 Z" fill="url(#gradSun)" />
+
+    <!-- Radiant Sparkles -->
+    <circle cx="28" cy="16" r="2.5" fill="#FDE047" opacity="0.8" />
+    <circle cx="72" cy="16" r="2.5" fill="#34D399" opacity="0.8" />
+    <circle cx="50" cy="5" r="2" fill="#FB923C" opacity="0.8" />
+  </g>
+
+  <!-- Typography: Brand Name & Slogan (100% English) -->
+  <g transform="translate(130, 24)">
+    <!-- Main Title -->
+    <text x="0" y="38" font-family="'Inter', 'Outfit', sans-serif" font-size="30" font-weight="900" fill="#F8FAFC" letter-spacing="1">
+      MORE THAN <tspan fill="url(#gradCoral)">GRADES</tspan>
+    </text>
+
+    <!-- Subtitle / Initiative -->
+    <text x="0" y="60" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#38BDF8" letter-spacing="3.5">
+      AI DIGITAL MEDIA INITIATIVE • DMD 1203
+    </text>
+
+    <!-- Slogan -->
+    <text x="0" y="80" font-family="'Inter', sans-serif" font-size="12.5" font-weight="500" fill="#94A3B8" font-style="italic">
+      “Your grade is part of your journey, not your worth”
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | More Than Grades — Confidential Student Support</title>
+  <meta name="description" content="Reach out to the More Than Grades support team with complete confidentiality, and access official verified crisis helplines across the UAE.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Universal Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo-link" title="More Than Grades - Home">
+        <img src="assets/logo/logo.svg" alt="More Than Grades Logo" class="brand-logo-img">
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation Menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="feature-anti-bullying.html" class="nav-link">Your Words Matter</a>
+        <a href="feature-new-student.html" class="nav-link">First Day Together</a>
+        <a href="feature-exam-stress.html" class="nav-link">Exam Balance</a>
+        <a href="feature-student-talents.html" class="nav-link">Student Talents</a>
+        <a href="feature-inspiring-stories.html" class="nav-link">
+          Inspiring Journeys <span class="nav-badge">Bonus</span>
+        </a>
+        <a href="contact.html" class="nav-link active">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-search-trigger" aria-label="Open Search">
+          <span>Search...</span>
+          <span class="search-shortcut">Ctrl+K</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Mobile Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" style="padding: 3.5rem 0 2rem;">
+      <div class="container">
+        <div class="hero-pill">
+          <span>💌 100% Confidential Listening Space</span>
+        </div>
+        <h1 class="hero-title">
+          Contact &amp; Support.. <br>
+          <span class="gradient-text-teal">Your Voice is Heard, You Are Never Alone</span>
+        </h1>
+        <p class="hero-description">
+          Whether you are navigating pre-exam anxiety, seeking advice regarding peer harassment, or eager to showcase your creative coding or artwork, our advisory team is here to listen and support without judgment.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form & Helplines Layout -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Left: Interactive Form -->
+          <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.25rem;">
+            <h2 class="section-title" style="font-size: 1.85rem; margin-bottom: 0.5rem;">Confidential Inquiry Form</h2>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+              You may submit your message with your full name or elect to remain completely anonymous.
+            </p>
+
+            <form id="student-support-form">
+              <!-- Anonymous Toggle -->
+              <div style="background: rgba(16, 185, 129, 0.1); border: 1px dashed var(--primary-teal); border-radius: var(--radius-sm); padding: 0.85rem 1rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem;">
+                <input type="checkbox" id="anonymous-mode-check" style="width: 20px; height: 20px; accent-color: var(--primary-teal); cursor: pointer;">
+                <label for="anonymous-mode-check" style="cursor: pointer; font-size: 0.95rem; font-weight: 700; color: #a7f3d0;">
+                  🔒 Send as Anonymous Peer (Complete Privacy, No Name Required)
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="student-name-input" class="form-label">Full Name (or Preferred Pseudonym):</label>
+                <input type="text" id="student-name-input" class="form-control" placeholder="e.g., Ahmed Al-Mansoori" required>
+              </div>
+
+              <div class="form-group">
+                <label for="student-email-input" class="form-label">Email for Follow-up (Optional if Anonymous):</label>
+                <input type="email" id="student-email-input" class="form-control" placeholder="name@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="student-institution-input" class="form-label">Academic Institution (Optional):</label>
+                <input type="text" id="student-institution-input" class="form-control" placeholder="e.g., Higher Colleges of Technology (HCT)">
+              </div>
+
+              <div class="form-group">
+                <label for="support-topic-select" class="form-label">Inquiry Category:</label>
+                <select id="support-topic-select" class="form-control" style="background: #0f172a; cursor: pointer;">
+                  <option value="Exam Anxiety &amp; GPA Pressure">Exam Balance: Managing Stress &amp; Study Fatigue</option>
+                  <option value="Anti-Bullying Support">Your Words Matter: Reporting Bullying or Seeking Support</option>
+                  <option value="New Student Inclusion">First Day Together: Adaptation &amp; Friendship Guidance</option>
+                  <option value="Student Creative Talent">Student Talents: Submitting a Coding or Art Showcase</option>
+                  <option value="General Feedback">General Platform Feedback &amp; Suggestions</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="student-message-input" class="form-label">Your Message or Experience:</label>
+                <textarea id="student-message-input" class="form-control" placeholder="Share what is on your mind freely. We are here to listen." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.05rem; padding: 0.9rem;">
+                <span>Submit Confidential Message ✉️</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Official UAE Helplines Directory & Crisis Contacts -->
+          <div>
+            <div class="helpline-box" id="emergency-helplines" style="margin-bottom: 2rem;">
+              <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem;">
+                <span style="font-size: 1.8rem;">🇦🇪</span>
+                <div>
+                  <h3 style="font-family: var(--font-title); font-size: 1.35rem; color: #fff;">Official UAE Youth Helplines</h3>
+                  <p style="font-size: 0.85rem; color: #cbd5e1;">Toll-free, 24/7 verified crisis resources across the Emirates:</p>
+                </div>
+              </div>
+
+              <div class="helpline-item">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">UAE Child Protection Center</div>
+                  <div style="font-size: 0.8rem; color: #94a3b8;">Ministry of Community Development (Toll-Free)</div>
+                </div>
+                <div class="helpline-number">116111</div>
+              </div>
+
+              <div class="helpline-item">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Estijaba Psychological Support</div>
+                  <div style="font-size: 0.8rem; color: #94a3b8;">Department of Health (DoH) — Abu Dhabi</div>
+                </div>
+                <div class="helpline-number">800 1717</div>
+              </div>
+
+              <div class="helpline-item">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">HOPE Mental Health Helpline</div>
+                  <div style="font-size: 0.8rem; color: #94a3b8;">National Program for Happiness &amp; Wellbeing</div>
+                </div>
+                <div class="helpline-number">800 4673</div>
+              </div>
+
+              <div class="helpline-item">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Dubai Foundation for Women &amp; Children</div>
+                  <div style="font-size: 0.8rem; color: #94a3b8;">Family &amp; Youth Counseling Support</div>
+                </div>
+                <div class="helpline-number">800 111</div>
+              </div>
+            </div>
+
+            <!-- AI Images on Contact Page -->
+            <div class="card" style="margin-bottom: 1.5rem;">
+              <div class="card-image-box">
+                <img src="assets/images/contact-support.svg" alt="Confidential Listening Space">
+              </div>
+              <h3 class="card-title">A Safe Space to Be Heard</h3>
+              <p class="card-text">
+                Vocalizing your academic stress is the vital first step toward restoring mental equilibrium. You don't have to carry the weight alone.
+              </p>
+              <button class="prompt-toggle-btn btn btn-outline" data-target="prompt-contact-1" style="font-size: 0.75rem;">
+                View Generation Prompt
+              </button>
+              <div id="prompt-contact-1" class="prompt-box" style="display: none;">
+                <code class="prompt-code">Prompt: "Conceptual artwork representing youth mental health support, listening ear made of glowing soundwaves and warm glowing hands, deep midnight blue and mint green palette, high-end 3D render"</code>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image-box">
+                <img src="assets/images/contact-community.svg" alt="Empathetic Student Community">
+              </div>
+              <h3 class="card-title">Empathetic Campus Network</h3>
+              <p class="card-text">
+                Hand in hand, we cultivate an educational ecosystem where every learner is celebrated for their authentic humanity.
+              </p>
+              <button class="prompt-toggle-btn btn btn-outline" data-target="prompt-contact-2" style="font-size: 0.75rem;">
+                View Generation Prompt
+              </button>
+              <div id="prompt-contact-2" class="prompt-box" style="display: none;">
+                <code class="prompt-code">Prompt: "Heartwarming visual metaphor of youth community network in UAE, interconnected glowing nodes forming a shield of empathy and kindness, professional illustration"</code>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Submission Success Modal -->
+  <div class="search-modal-backdrop" id="form-success-modal" style="display: none;">
+    <div class="search-modal-window" style="text-align: center; padding: 2.5rem 1.5rem;">
+      <div style="font-size: 3.5rem; margin-bottom: 1rem;">🎉</div>
+      <h3 style="font-family: var(--font-title); font-size: 1.8rem; color: #34d399; margin-bottom: 0.75rem;">
+        Message Submitted Successfully!
+      </h3>
+      <p id="success-summary-text" style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.75rem;">
+        Thank you for reaching out with trust. If you requested a follow-up, our advisory team will respond with full confidentiality.
+      </p>
+      <button class="btn btn-primary" id="modal-success-close" style="padding: 0.6rem 2rem;">
+        <span>Close Window</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo/logo.svg" alt="More Than Grades Logo" style="height: 48px; width: auto;">
+          <p>
+            An innovative digital media platform conceived to advance student mental health, peer solidarity, and holistic human worth in UAE academic institutions. Your grade is part of your journey, not the measure of your worth.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Platform Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="feature-anti-bullying.html">Your Words Matter</a></li>
+            <li><a href="feature-new-student.html">First Day Together</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Features &amp; Support</h4>
+          <ul class="footer-links">
+            <li><a href="feature-exam-stress.html">Exam Season Balance</a></li>
+            <li><a href="feature-student-talents.html">Student Talents</a></li>
+            <li><a href="feature-inspiring-stories.html">Inspiring Journeys (Bonus)</a></li>
+            <li><a href="contact.html">Contact &amp; Helplines</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Official UAE Crisis Helplines</h4>
+          <p style="font-size: 0.88rem; color: #94a3b8; margin-bottom: 0.75rem;">If you are in distress, confidential support is available 24/7:</p>
+          <div style="background: rgba(30, 41, 59, 0.7); padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+            <div style="font-size: 0.85rem; color: #34d399; font-weight: 700;">UAE Child Protection Center:</div>
+            <div style="font-size: 1.25rem; font-weight: 800; color: #fb923c;">116111</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          All Rights Reserved © 2026 | AI in Digital Media (DMD 1203 / COM 2103) — Higher Colleges of Technology (HCT).
+        </div>
+        <div>
+          All written content, imagery, and video AI-generated in respectful alignment with UAE national culture.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="search-modal-backdrop" id="search-modal" role="dialog" aria-modal="true" aria-label="Search Dialog">
+    <div class="search-modal-window">
+      <div class="search-input-header">
+        <span style="font-size: 1.2rem;">🔍</span>
+        <input type="text" id="search-modal-input" placeholder="Search across all articles, stories, guides, and tips..." autocomplete="off">
+        <button class="search-close-btn" id="search-modal-close" aria-label="Close Search">✕</button>
+      </div>
+      <div class="search-results-body" id="search-results-box"></div>
+    </div>
+  </div>
+
+  <script src="js/search.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

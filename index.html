@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | More Than Grades — AI Youth Digital Media</title>
+  <meta name="description" content="An AI-powered digital media platform advocating for student wellbeing, emotional resilience, and holistic self-worth beyond academic test scores in the UAE.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Universal Header (8 Navigation Buttons + Search) -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo-link" title="More Than Grades - Home">
+        <img src="assets/logo/logo.svg" alt="More Than Grades Logo" class="brand-logo-img">
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation Menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="feature-anti-bullying.html" class="nav-link">Your Words Matter</a>
+        <a href="feature-new-student.html" class="nav-link">First Day Together</a>
+        <a href="feature-exam-stress.html" class="nav-link">Exam Balance</a>
+        <a href="feature-student-talents.html" class="nav-link">Student Talents</a>
+        <a href="feature-inspiring-stories.html" class="nav-link">
+          Inspiring Journeys <span class="nav-badge">Bonus</span>
+        </a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-search-trigger" aria-label="Open Search">
+          <span>Search...</span>
+          <span class="search-shortcut">Ctrl+K</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Mobile Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-pill">
+          <span>✨ AI-Integrated Youth Media Initiative • DMD 1203</span>
+        </div>
+        <h1 class="hero-title">
+          The Real Student Journey.. <br>
+          <span class="gradient-text-coral">“Your Grade is Part of You, Not All of You”</span>
+        </h1>
+        <p class="hero-description">
+          In schools and universities, there are pivotal human moments that never appear on report cards: a student enduring peer harassment, a newcomer eating lunch alone, or a creative coder feeling their worth is defined solely by a single examination mark. We are here to redefine academic self-worth.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#video-section" class="btn btn-primary">
+            <span>▶ Watch AI Narrative Video</span>
+          </a>
+          <a href="feature-inspiring-stories.html" class="btn btn-secondary">
+            <span>Explore Student Journeys</span>
+          </a>
+          <a href="about.html" class="btn btn-outline">
+            <span>Our Mission &amp; UAE Vision</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Video Player Section (35 Seconds with Audio Requirement) -->
+    <section class="section" id="video-section" style="padding-top: 0;">
+      <div class="container">
+        <div class="video-wrapper-card" id="video-player">
+          <div class="video-player-header">
+            <div>
+              <span class="video-badge">✦ AI-Synthesized Narrative Video (35 Seconds with Synchronized Audio)</span>
+              <h2 style="font-size: 1.35rem; margin-top: 0.4rem; color: #f8fafc;">Beyond Numbers &amp; Report Cards: The Authentic Student Experience</h2>
+            </div>
+            <div style="font-size: 0.85rem; color: #94a3b8;">
+              Course: AI in Digital Media (DMD 1203 / COM 2103)
+            </div>
+          </div>
+
+          <!-- Video Canvas Container -->
+          <div class="video-container">
+            <canvas id="ai-video-canvas" class="interactive-video-canvas"></canvas>
+            
+            <!-- Play Overlay -->
+            <div class="video-overlay-play" id="video-overlay-play">
+              <div class="play-btn-circle">▶</div>
+              <div class="video-play-text">Click to Play 35s Video with Audio Narration</div>
+              <div style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.35rem;">
+                Duration: 35s • English Voiceover Narration • Dynamic Cinematic Visuals
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Playback Controls -->
+          <div class="video-custom-controls">
+            <button class="btn btn-outline" id="btn-video-play" style="padding: 0.4rem 0.9rem; border-radius: 8px;" title="Play / Pause">
+              <span id="play-icon">▶</span>
+            </button>
+            
+            <div class="progress-bar-container" id="video-progress-container" title="Seek Progress Bar">
+              <div class="progress-fill" id="video-progress-fill"></div>
+            </div>
+
+            <div class="video-time-display" id="video-time-display">0:00 / 0:35</div>
+
+            <button class="btn btn-outline" id="btn-video-mute" style="padding: 0.4rem 0.75rem; border-radius: 8px;" title="Mute / Unmute">
+              🔊
+            </button>
+
+            <button class="btn btn-outline" id="btn-video-fullscreen" style="padding: 0.4rem 0.75rem; border-radius: 8px;" title="Fullscreen">
+              ⛶
+            </button>
+          </div>
+
+          <!-- Dynamic Subtitles & Transcript -->
+          <div class="video-transcript-box">
+            <strong style="color: #34d399;">Synchronized Subtitle Transcript:</strong>
+            <p id="video-subtitles-text" style="margin-top: 0.3rem; color: #f8fafc; font-size: 1.05rem;">
+              Click play to begin the cinematic sequence and audio voiceover...
+            </p>
+          </div>
+
+          <!-- Prompt Engineering Breakdown Drawer -->
+          <div style="margin-top: 1rem;">
+            <button class="prompt-toggle-btn btn btn-outline" data-target="video-prompt-box" style="font-size: 0.85rem; padding: 0.4rem 0.9rem;">
+              View AI Generation Prompt
+            </button>
+            <div id="video-prompt-box" class="prompt-box" style="display: none; margin-top: 0.75rem;">
+              <div class="prompt-box-title">🤖 AI Tool Pipeline: Runway Gen-3 Alpha + ElevenLabs Voice Synthesis</div>
+              <code class="prompt-code">
+Prompt: "Cinematic 35-second sequence of UAE university students in a sunlit modern glass campus in Abu Dhabi. Scene opens with a student feeling overwhelmed over examination papers, transitions smoothly to a caring peer placing a supportive hand on his arm, followed by a dynamic montage of extracurricular passions: programming an autonomous robotics project and painting an emotive digital canvas. Closes with an inspiring sunrise over the Arabian Gulf. Warm golden hour lighting, 8k resolution, photorealistic, uplifting orchestral tone."
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats & Impact Ribbon -->
+    <section class="stats-ribbon">
+      <div class="container">
+        <div class="grid-4">
+          <div class="stat-item">
+            <div class="stat-number">85%</div>
+            <div class="stat-label">of students experience intense exam &amp; GPA anxiety</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number coral">1 in 3</div>
+            <div class="stat-label">youth encounter peer harassment and need solidarity</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">of students possess creative gifts outside syllabi</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number coral">24/7</div>
+            <div class="stat-label">safe, confidential peer listening &amp; crisis resources</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Feature Highlights (Interactive Cards) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Core Platform Pillars</div>
+          <h2 class="section-title">Four Pillars Touching Every Student Journey</h2>
+          <p class="section-subtitle">
+            Exploring interactive, psychologically grounded guidance crafted through generative AI to foster resilience, empathy, and genuine self-worth.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-image-box">
+              <img src="assets/images/bullying-scene.svg" alt="Your Words Matter - Anti-Bullying">
+              <span class="card-badge">Pillar 1</span>
+            </div>
+            <div class="card-icon">🛡️</div>
+            <h3 class="card-title">Your Words Matter</h3>
+            <p class="card-text">
+              Real-world insights on the emotional toll of verbal and cyberbullying, and how a single courageous peer can alter someone's entire trajectory.
+            </p>
+            <a href="feature-anti-bullying.html" class="card-link">Explore Pillar 1 →</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-image-box">
+              <img src="assets/images/new-student-arrival.svg" alt="First Day Together - New Student Adaptation">
+              <span class="card-badge">Pillar 2</span>
+            </div>
+            <div class="card-icon coral">🎒</div>
+            <h3 class="card-title">First Day Together</h3>
+            <p class="card-text">
+              Relocating to a new school or campus is daunting; discover our 5-step roadmap to break the ice, build confidence, and form lasting friendships.
+            </p>
+            <a href="feature-new-student.html" class="card-link">New Student Guide →</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-image-box">
+              <img src="assets/images/exam-pressure.svg" alt="Exam Season Balance - Stress Relief">
+              <span class="card-badge">Pillar 3</span>
+            </div>
+            <div class="card-icon">⏳</div>
+            <h3 class="card-title">Exam Season Balance</h3>
+            <p class="card-text">
+              Smart study methods, Pomodoro focus cycles, sleep hygiene, and decoupling your human dignity from examination GPA calculations.
+            </p>
+            <a href="feature-exam-stress.html" class="card-link">Exam Balance Tips →</a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card-image-box">
+              <img src="assets/images/talent-robotics.svg" alt="A Space for Your Passion - Extracurricular Talents">
+              <span class="card-badge">Pillar 4</span>
+            </div>
+            <div class="card-icon coral">🎨</div>
+            <h3 class="card-title">A Space for Your Passion</h3>
+            <p class="card-text">
+              Celebrating extracurricular achievements in AI programming, fine digital arts, sports, and community leadership across the Emirates.
+            </p>
+            <a href="feature-student-talents.html" class="card-link">Discover Talents →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inspiring Stories & AI Case Studies (Over and Above Preview) -->
+    <section class="section" style="background: rgba(15, 23, 42, 0.4); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: center;">
+          <div>
+            <div class="hero-pill">
+              <span>🌟 Bonus Feature Page (Band 5 Target: Going Over &amp; Above)</span>
+            </div>
+            <h2 class="section-title">Authentic Student Stories Created with Generative AI</h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.8;">
+              We leveraged generative artificial intelligence to craft fictional yet deeply relatable student archetypes: from Sultan, who overcame algebra anxieties to champion national AI hackathons, to Noura, who healed social stigmas through emotive digital canvases.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="feature-inspiring-stories.html" class="btn btn-secondary">
+                <span>Browse Student Anthology</span>
+              </a>
+              <a href="contact.html" class="btn btn-outline">
+                <span>Submit Your Story Anonymously</span>
+              </a>
+            </div>
+          </div>
+          <div>
+            <img src="assets/images/story-character-sultan.svg" alt="Sultan - AI Innovator Character" style="border-radius: var(--radius-md); box-shadow: var(--shadow-lg);">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo/logo.svg" alt="More Than Grades Logo" style="height: 48px; width: auto;">
+          <p>
+            An innovative digital media platform conceived to advance student mental health, peer solidarity, and holistic human worth in UAE academic institutions. Your grade is part of your journey, not the measure of your worth.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Platform Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="feature-anti-bullying.html">Your Words Matter</a></li>
+            <li><a href="feature-new-student.html">First Day Together</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Features &amp; Support</h4>
+          <ul class="footer-links">
+            <li><a href="feature-exam-stress.html">Exam Season Balance</a></li>
+            <li><a href="feature-student-talents.html">Student Talents</a></li>
+            <li><a href="feature-inspiring-stories.html">Inspiring Journeys (Bonus)</a></li>
+            <li><a href="contact.html">Contact &amp; Helplines</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Official UAE Crisis Helplines</h4>
+          <p style="font-size: 0.88rem; color: #94a3b8; margin-bottom: 0.75rem;">If you are in distress, confidential support is available 24/7:</p>
+          <div style="background: rgba(30, 41, 59, 0.7); padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+            <div style="font-size: 0.85rem; color: #34d399; font-weight: 700;">UAE Child Protection Center:</div>
+            <div style="font-size: 1.25rem; font-weight: 800; color: #fb923c;">116111</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          All Rights Reserved © 2026 | AI in Digital Media (DMD 1203 / COM 2103) — Higher Colleges of Technology (HCT).
+        </div>
+        <div>
+          All written content, imagery, and video AI-generated in respectful alignment with UAE national culture.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Client-Side Search Modal Dialog -->
+  <div class="search-modal-backdrop" id="search-modal" role="dialog" aria-modal="true" aria-label="Search Dialog">
+    <div class="search-modal-window">
+      <div class="search-input-header">
+        <span style="font-size: 1.2rem;">🔍</span>
+        <input type="text" id="search-modal-input" placeholder="Search across all articles, stories, guides, and tips..." autocomplete="off">
+        <button class="search-close-btn" id="search-modal-close" aria-label="Close Search">✕</button>
+      </div>
+      <div class="search-results-body" id="search-results-box">
+        <!-- Live Results injected via search.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/search.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
